@@ -1,4 +1,4 @@
-FROM node:10.15.3-alpine
+FROM alpine:3.10
 LABEL maintainer="Wonderlic DevOps <DevOps@wonderlic.com>"
 
-RUN apk --no-cache add g++ gcc linux-headers make python
+RUN apk add --no-cache nodejs npm python2 make g++ gcc linux-headers
