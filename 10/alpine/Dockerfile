@@ -1,9 +1,8 @@
 FROM node:10-alpine as staging
 
-RUN apk --no-cache add binutils upx
+RUN apk --no-cache add binutils
 
 RUN strip -s /usr/local/bin/node
-RUN upx -9 -qqq /usr/local/bin/node
 
 #---------------------------------------------------------------------
 FROM alpine:3.9
