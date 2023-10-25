@@ -1,4 +1,4 @@
-FROM node:20-alpine3.17
+FROM node:20-alpine3.18
 LABEL maintainer="Wonderlic DevOps <DevOps@wonderlic.com>"
 
 RUN apk --no-cache add python2 build-base

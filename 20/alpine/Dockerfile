@@ -1,11 +1,11 @@
-FROM node:20-alpine3.17 as staging
+FROM node:20-alpine3.18 as staging
 
 RUN apk --no-cache add binutils
 
 RUN strip -s /usr/local/bin/node
 
 #---------------------------------------------------------------------
-FROM alpine:3.17
+FROM alpine:3.18
 LABEL maintainer="Wonderlic DevOps <DevOps@wonderlic.com>"
 
 RUN addgroup -g 1000 node \
