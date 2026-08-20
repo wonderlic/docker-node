@@ -3,4 +3,4 @@ LABEL maintainer="Wonderlic DevOps <DevOps@wonderlic.com>"
 
 RUN apk --no-cache add python3 build-base
 
-RUN npm install pnpm -g
+RUN npm install pnpm@11 -g
